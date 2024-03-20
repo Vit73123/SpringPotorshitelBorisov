@@ -11,6 +11,7 @@ import java.util.Map;
 
 public class ProfilingHandlerBeanPostProcessor implements BeanPostProcessor {
     private Map<String, Class> map = new HashMap<>();
+    private ProfilingController controller = new ProfilingController();
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
